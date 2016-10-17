@@ -1,0 +1,567 @@
+#navigation ul li.property span.icon {
+	background-position: -610px -340px;
+}
+
+#navigation ul li.logs span.icon {
+	background-position: -610px -303px;
+}
+
+#navigation ul li.resourcePoolPermission span.icon {
+	background-position: -610px -380px;
+}
+
+#navigation ul li.workOrderDue span.icon{
+	/* background: url(../images/workorder.png) no-repeat 5px 10px; */
+		background: url(../images/ICON_2.png) no-repeat -565px -103px;
+		/* background-size: 32px; */
+}
+#navigation ul li.workOrders span.icon{
+	background: url(../images/ICON_2.png) no-repeat -565px -164px;
+}
+#navigation ul li.workOrderToDo span.icon{
+	background: url(../images/ICON_2.png) no-repeat -565px -40px;
+}
+#navigation ul li.resourceStatistics span.icon {
+	background: url(../images/icons_resourceStatistics.gif) no-repeat 5px
+		10px;
+	background-size: 32px;
+}
+
+#navigation ul li.workOrderReport span.icon {
+	background: url(../images/icons_workOrderReport.gif) no-repeat 5px 10px;
+	background-size: 32px;
+}
+
+/* #navigation ul li.topData span.icon {
+	background: url(../images/icons_topData.gif) no-repeat 5px 10px;
+	background-size: 32px;
+} */
+#navigation ul li.topData span.icon{
+	background: url(../images/ICON_2.png) no-repeat -1034px -102px;;
+}
+
+#navigation ul li.hpHostManagement span.icon {
+	background: url(../images/icons_workOrderReport.gif) no-repeat 5px 10px;
+	background-size: 47px;
+}
+
+
+#navigation ul li.equipmentEnroll span.icon {
+	background-position: -610px -295px;
+}
+
+#navigation ul li.service{
+	background: #fff;
+}
+#navigation ul li.service span.icon{
+	background-position:-208px -440px;
+	background-position:-120px -440px;
+}
+.ui-datepicker{
+	z-index: 9999 !important;
+}
+.system-dashboard.zone .status_box li{
+	margin-bottom: 20px !important;
+}
+.system-dashboard.zone{
+	height:709px !important;
+}
+.new-project .field label{
+	height:20px !important;
+}
+.new-project .field label{
+	width:140px !important;
+}
+.new-project .field input[type=text],.new-project .field select{
+	width:480px !important;
+}
+.new-project .field select,.new-project .field textarea{
+	margin: 15px 0 0 15px;
+	border-radius:5px;
+}
+.new-project .field textarea{
+	width:480px !important;
+}
+.new-project .projectReason label{
+	height: 80px  !important;
+}
+.new-project .resourePool{
+	height: 44px;
+}
+.project-dashboard .resources form .field textarea{
+	float: right;
+	margin-right: 105px;
+	width: 180px;
+	border-radius: 5px;
+}
+/* .detail-view .main-groups{
+	max-height: 507px;
+} delete by@ma*/
+.detail-view.edit-mode .main-groups {
+	max-height: 460px;
+}
+.applyReason td textarea{
+	margin-left: 10px;
+	min-width: 360px;
+	max-width:560px;
+}
+
+/**********************************************start 濠电姷顣介敓浠嬪磹妞嬪海绠旈柛妤�啋s闂備礁鎼粔鎾床閼碱剚顫曢柍鈺佸暟閳绘棃鏌ｉ幋鐏活亜顭囬幋锔界厱闁哄啫鍊稿瓭闂佹眹鍊曠�顓犵箔閻旂尨鎷锋い鎺嶇劍閻濐亪姊婚崒姘卞闁搞劌銈搁幆鍐偄閻撳孩鐎梺璺ㄥ櫐閹凤拷********************************/
+/******缂傚倷鐒﹂〃锕傚礂濞戞氨鍗氶柡澶嬪焾濞间即鏌曟径鍫濆婵炲牆鐖奸弻鈩冩媴閾忓湱鐦堥柣鐐翠亢妞村摜绮欐径鎰仏缂侇偓绠ct婵犵鍓濋〃婊兾涘▎寰喐寰勫畝锟界劶闂佺粯鍨堕敋缂佹鎹囬弻锝呂旈敓钘夆叺濠碘槅鍋夐崺鏍晬閹扮増鏅搁柨鐕傛嫹****
+.multi-wizard .content .section .select-area select{
+	margin: 2px 0px 0px 14px;
+}
+.multi-wizard .content .section .select-area select.pool{
+	width:120px;
+	margin: 11px 4px 0px 14px;
+}
+***/
+.multi-wizard .content .section .select-area select{
+	margin-top:5px;
+}
+.multi-wizard .content .section .select-area{
+	height: 60px;
+}
+/***闂備礁鎼崐鐟邦熆濮楋拷鐑藉礃椤忓孩瀚归梺缁樺姈婢瑰棙瀵奸幇鐗堢厸闁割偒鍓氱�褰掓煙椤旂瓔娈辩紒瀣樀閺佹挾绮电�顏勎￠柣搴＄秺濞艰崵绱撳璺虹柧闁割偅娲橀ˉ鏃堟煏韫囧﹤澧茬紒璁规嫹濠德板�閸婂綊鏁嬮柣搴ｎ攰濞呮洟寮查崼鏇熷�闁圭粯甯╁锟�濠电偞鍨堕幖鈺傜濠婂牆纾挎慨妯块哺椤繘鏌ㄩ悤鍌涘*********/
+.multi-wizard .select-container{
+	height: 372px;
+}
+/*********************************************end***********************************/
+
+/**********************************************start 濠电姷顣介敓浠嬪磹妞嬪海绠旈柛妤�啋s闂備礁鎼粔鎾床閼碱剚顫曢柍鈺佸暟閳绘棃鏌ｉ幋鐐嗘垹鐥鐐寸厸闁跨喓鐡斿鎰節閿熻姤鍠樼�鏇熺箞閸╁嫰宕橀埡鍐ㄥ箥婵犵鍓濋〃婊堟偋閹扮増鍎嶉柣鏃傚帶閺嬩線鏌ㄩ悤鍌涘*********************************/
+.ui-dialog div.form-container div.value textarea{
+	width:222px;
+}
+/**********************************************end***********************************/
+
+/******************************************start闂備礁鎼崐鐟邦熆濮楋拷鐑藉礃閳瑰じ绨婚梺闈╁瘜閸樼晫绮ｅΔ锟芥工闁靛牆娲﹂弳顒佺箾閼测晛顣奸柡鍛埣閹瑩骞撻幒婵囧闂備浇妗ㄩ悞锕�熆濮楋拷鍋ょ憸搴☆焽韫囨稑绠婚柛鎰絻濮规煡姊洪崫鍕枌缂佺粯绻堥幃鏉库枎閹惧鍙嗗┑鐐叉鐢晠宕甸弽顬ュ酣宕堕敐鍛拤婵炲鍘ч幊姗�嵁閹捐绠涙い鏃囨〃缁拷闂備礁鎼粔鎾床閼碱剚顫曢柍鈺佸暟閳瑰秵銇勯弮鍥撻柡鍡嫹**************************/
+.new-project .field label.error{
+	width:180px !important;
+	margin-left: 170px;
+	margin-top: 40px;
+	padding: 0px;
+}
+.new-project div.projectReason label.error{
+	margin-top: 5px;
+}
+
+/**********************************************end***********************************/
+/* seconde development add */
+.data-table table.body input[type=button] {
+  display: inline-block;
+  height: 25px;
+  border: none;
+  color: #FFFFFF;
+  -moz-text-shadow: 0px -1px 1px #465259;
+  -webkit-text-shadow: 0px -1px 1px #465259;
+  -o-text-shadow: 0px -1px 1px #465259;
+  text-shadow: 0px -1px 1px #465259;
+  background: #0049FF url(../images/gradients.png) 0px -317px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #0069CF;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+
+#validateForm label.error{
+	position: static;
+	margin-left: 10px;
+}
+
+/* add by huang xianjin used in resource statistics style begin */
+.detail-view #details-tab-detailTable div.list-view {
+	width: 610px;
+	margin: auto auto !important;
+}
+
+.detail-view #details-tab-detailTable div.list-view div.fixed-header {
+	left: 13px !important;
+	top: 10px !important;
+	width: 553px !important;
+}
+
+.detail-view #details-tab-detailTable div.list-view div.fixed-header table
+	{
+	top: 20px !important;
+}
+
+.detail-view #details-tab-detailTable div.list-view div.data-table table
+	{
+	width: 553px !important;
+}
+/* resource statistics style end */
+
+/* seconde development add in work order report style begin */
+.plot-view div.plot {
+	position: relative;
+	height: 274px;
+	width: 98%;
+	background: #FFFFFF;
+	border: 1px solid #E2DDDD;
+	margin-top: 41px;
+	margin-left: 8px;
+	/* 	overflow: auto; */
+	/* 	overflow-x: hidden; */
+}
+
+.plot-view div.plot-list {
+	position: relative;
+}
+
+.plot-view div.list-view {
+	width: 780px;
+	border: 1px solid #DAD4D4;
+	/* margin: 11px auto auto !important; */
+	margin: 1px 1px 1px 6px;
+	height: 356px !important;
+	background: #F7F7F7;
+}
+
+.plot-view div.list-view div.fixed-header {
+	width: 703px !important;
+	top: 1px !important;
+	left: 19px !important;
+	background: #FFFFFF;
+}
+
+.plot-view div.list-view div.fixed-header table {
+	top: 20px !important;
+}
+
+.plot-view div.list-view table tbody td.ym,.plot-view div.list-view table tbody td.s1,.plot-view div.list-view table tbody td.s5,.plot-view div.list-view table tbody td.s6,.plot-view div.list-view table tbody td.total,.plot-view div.list-view table th.ym,.plot-view div.list-view table th.s1,.plot-view div.list-view table th.s5,.plot-view div.list-view table th.s6,.plot-view div.list-view table th.total
+	{
+	min-width: 60px;
+/* 	max-width: 60px !important; */
+	width: 60px !important;
+}
+
+.plot-view select {
+	height: 21px;
+	font-size: 12px;
+	border: 1px solid #808080;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.plot-view input[type=button] {
+  display: inline-block;
+  height: 25px;
+  border: none;
+  color: #FFFFFF;
+  -moz-text-shadow: 0px -1px 1px #465259;
+  -webkit-text-shadow: 0px -1px 1px #465259;
+  -o-text-shadow: 0px -1px 1px #465259;
+  text-shadow: 0px -1px 1px #465259;
+  background: #0049FF url(../images/gradients.png) 0px -317px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #0069CF;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  margin : 3px 5px 3px 5px;
+}
+
+.reportTable table tbody td,.reportTable table th {
+	min-width: 0px;
+}
+
+.reportTable table {
+	width: auto;
+	max-width: 777px;
+	margin: 5px;
+	text-indent: 0px;
+}
+
+.reportTable table tbody tr {
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+}
+
+.reportTable .legendLabel,.reportTable .legendColorBox {
+	padding: 2px;
+}
+
+.reportTable .sysData { color:#888;}
+.reportTable .sysData li { border:1px dotted #bdb9a1; background-color:#fff; padding:5px; margin-bottom:10px;}
+.reportTable .sysData .dataTitle { line-height:2.2em; border-bottom:1px solid #7d86b3; padding:0 5px;}
+.reportTable .sysData .dataStatus { font-weight:bold; color:#4ec914; margin-top:5px;}
+.reportTable .sysData .dataTip { padding:2px 3px; line-height:1em;}
+.reportTable .sysData .icon { color:#000; width:60px; text-align:right; font-weight:bold; background-position:3px 50%; background-repeat:no-repeat;}
+.reportTable .sysData .percent { height:22px; margin:4px 0; margin-left:10px; background:#4ec914 url(../images/icon/progress.jpg) no-repeat 100% 100%;}
+.reportTable .sysData .val { color:#4ec914; font-weight:bold; padding-left:5px;}
+.reportTable .sysData li:hover { color:#7d86b3; border-color:#283993;}
+
+.reportTable { margin-bottom:10px; padding-right: 10px;}
+.reportTable .sysData { margin:0 5px;}
+.reportTable .sysData li:hover .dataTip { color:#fff;}
+.reportTable .dataTitle { margin-top: 5px; font-size: 12px; text-align:right;}
+.reportTable .dataStatus { height:220px;}
+.reportTable .dataTip { font-size: 12px; color:#e2e2e2; text-align:center;}
+.reportTable .columnTip { float:left; background-color:#555; margin-top:5px; margin-left:35px; padding:5px;}
+.reportTable .poolData { height:210px; margin-right:0;}
+.reportTable .poolData li { float:left; margin-right:5px;}
+.reportTable .poolData .dataStatus { width:168px; height:160px;}
+.reportTable .orderData .dataTitle { text-align:right;}
+.reportTable .ipsData { height:280px; margin-right:0;}
+.reportTable .ipsData li { display:none; float:left; height:260px; margin-right:5px;}
+.reportTable .ipsData .dataStatus { width:353px;}
+
+/* work order report style end */
+
+div.list-view table tbody td.productionPool,div.list-view table tbody td.testingPool,div.list-view table tbody td.save,div.list-view table th.productionPool,div.list-view table th.testingPool,div.list-view table th.save
+	{
+	min-width: 60px;
+	max-width: 60px !important;
+	width: 60px !important;
+}
+
+
+/***** added by steven ,2014/03/21, for the page of resource pool  *****/
+#header .link{
+	float: right;
+	color: #fff;
+	margin-top: 15px;
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 14px;
+}
+#header .link:hover{
+	text-decoration:underline;
+}
+/*
+#header div.controls{
+	padding-right:16px;
+}
+*/
+/***** added by steven ,2014/03/24, auto change a new line to adapt the long words  *****/
+table tbody td, table th{
+	table-layout : fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+/** 闂備浇鐨崱鈺佹缂傚倸绉寸粔鐢稿Φ閸曨垱鍋ㄩ柛娑橈攻閵嗗啯绻涢幋鐐存儎闁告ɑ鍎抽埢鎾诲箣閿曪拷鍞ㄩ悗鐟板婢瑰棛娑甸敓绲榙ded by Li Manxin*/
+.index_header { background:url(../images/repeatsH.png) repeat-x 0 0; height:100px; padding:20px 0;}
+.index_logoBar { width:500px; height:100px; margin:0 auto;}
+
+ /**menu style added by huangxianjin*/
+#navigation ul li.pl_45 {
+	padding-left: 45px;
+}
+
+#navigation ul li:hover.pl_45,#navigation ul li.active.pl_45 {
+	 /**width: 185px;  濞夈劑鍣碄ma*/  
+}
+
+#navigation ul li.service span.icon,#navigation ul li.resourceMenu span.icon,
+#navigation ul li.systemMenu span.icon,#navigation ul li.logMenu span.icon,#navigation ul li.statisticMenu span.icon,
+#navigation ul li.instanceMenu span.icon,
+#navigation ul li.workOrderMenu span.icon
+	{
+	background-position: -120px -433px;
+}
+/* --------鐎殿噯鎷烽‖锟絘dd@ma 10-28-----------*/
+/* #navigation ul li.instanceMenu span.icon {
+  background-position: -73px -18px;
+}
+
+#navigation ul li.instanceMenu.active span.icon,
+#navigation ul li.instanceMenu span.icon {
+  background-position: -82px -686px;
+}
+*/
+#navigation ul li.instances span.icon {
+  background-position: -73px -18px;
+}
+
+#navigation ul li.instances.active span.icon,
+#navigation ul li.instances:hover span.icon {
+  background-position: -82px -686px;
+}
+
+#navigation ul li.physicsInstances span.icon {
+  background-position: -73px -18px;
+}
+
+#navigation ul li.physicsInstances.active span.icon,
+#navigation ul li.physicsInstances span.icon {
+  background-position: -82px -686px;
+}  /* --------闁规惌浜濋锟�---------*/
+#navigation ul li.toggle span.icon {
+	background-position: -208px -433px;
+}
+
+#validateForm label.error{
+	display:inline-block;
+}
+.detail-group .main-groups table td.value > span{
+	 display: block;
+  	 height: auto;
+  	 overflow: hidden;
+  	 position: relative;
+  	 top:0px;
+  	 float: none;
+  	 width: 100%;
+}
+.details.group-multiple table {
+border: 1px solid #cfc9c9;
+}
+/**
+#details-tab-stats table.header div.detail-group{
+	float: left;
+	height: 40px;
+	margin: -15px 0 -8px -17px;
+	border: none;
+}
+#details-tab-stats table.header table{
+	border: none;
+	border-right: 1px solid #cfc9c9;
+}*/
+
+#placeholder .xAxis .tickLabel {
+	word-wrap: break-word;
+	padding-left: 15px;
+}
+table tbody td, table th{
+	min-width:86px;
+}
+.logs table tbody td, .logs table th{
+	padding: 9px 3px 4px 3px;
+}
+
+div.details div.detail-group tr.resourcePoolId select,
+div.details div.detail-group tr.approveResult select,
+div.details div.detail-group tr.diskOfferingId select,
+div.details div.detail-group tr.serviceofferingid select,
+div.details div.detail-group tr.templateid select,
+div.details div.detail-group tr.zoneid select,
+div.details div.detail-group tr.diskofferingid select,
+div.details div.detail-group tr.hypervisor select,
+div.details div.detail-group tr.networkids select,
+div.details div.detail-group tr.approveDesc textarea
+ {
+	margin-left: 10px;
+	min-width: 360px;
+	max-width: 560px;
+}
+.multi-wizard.instance-wizard .select-network .main-desc{
+	margin-bottom: 10px;
+}
+#details-tab-approve div.details{
+	margin-top:20px !important;
+}
+.system-dashboard.zone .status_box li.resourcepools .icon {
+  background-position: -36px -105px;
+}
+
+div.workOrders div.toolbar div.filters {
+	width: 224px;/*190-->224 @ma*/
+}
+div.workOrders div.toolbar div.filters select {
+	width: 142px; /*130-->142 @ma*/
+}
+#navigation ul li.hpux span.icon{
+	background-position: -73px -23px
+}
+#navigation ul li.hphost span.icon{
+	background: url(../images/infrastructure-icons.png) no-repeat 0px 0px;
+	background-position: -610px -102px;
+	width: 10px;
+	height: 10px;
+	padding: 15px 25px;
+	margin-left:-17px;
+}
+.detail-view #details-tab-detailTable div.listViewsHead {
+	position : relative;
+	padding-top : 7px;
+}
+.detail-view #details-tab-detailTable div.listViewsHead table tbody td {
+	padding: 5px 5px 4px 5px;
+}
+	
+.detail-view #details-tab-detailTable div#resourcePool div.list-view {
+	height: 300px !important;
+}
+.detail-view #details-tab-detailTable div#resourcePool div.list-view div.fixed-header {
+	height: 27px;
+}
+.detail-view #details-tab-detailTable div#resourcePool div.list-view div.fixed-header table {
+	top: 10px !important;
+}
+.detail-view #details-tab-detailTable div#resourcePool div.list-view table.body {
+	margin-top: 39px;
+}
+
+.detail-view #details-tab-detailTable div#resourcePoolX86 div.list-view {
+	height: 130px !important;
+}
+.detail-view #details-tab-detailTable div#resourcePoolX86 div.list-view div.fixed-header {
+	height: 27px;
+}
+.detail-view #details-tab-detailTable div#resourcePoolX86 div.list-view div.fixed-header table {
+	top: 10px !important;
+}
+.detail-view #details-tab-detailTable div#resourcePoolX86 div.list-view table.body {
+	margin-top: 39px;
+}
+
+.detail-view #details-tab-detailTable div#resourcePoolHPVM div.list-view {
+	height: 130px !important;
+}
+.detail-view #details-tab-detailTable div#resourcePoolHPVM div.list-view div.fixed-header {
+	height: 27px;
+}
+.detail-view #details-tab-detailTable div#resourcePoolHPVM div.list-view div.fixed-header table {
+	top: 10px !important;
+}
+.detail-view #details-tab-detailTable div#resourcePoolHPVM div.list-view table.body {
+	margin-top: 39px;
+}
+/* .dashboard.admin .dashboard-container.sub.alerts{
+	height: 150px;
+} */
+.dashboard.admin .dashboard-container.sub.message{
+	width: 763px;
+	margin-bottom: 10px;
+}
+.dashboard.admin .dashboard-container.sub.message ul{
+	width:760px;
+}
+.dashboard.admin .dashboard-container.sub.message ul li,.dashboard.admin .dashboard-container.sub.message ul li span.title{
+	width:100%;
+}
+.dashboard.admin .dashboard-container.sub.message ul li label{
+	float: right
+}
+.dashboard.admin .dashboard-container.sub.message ul li div.content{
+	line-height: 1.5;
+	font-size: 12px;
+}
+
+/*add by @ma  for the apply time */
+.multi-wizard.instance-wizard   .section.apply-time-length {
+    background: none repeat scroll 0 0 #e9e9e9;
+    border-radius: 4px;
+/*     margin: 12px 0 15px 8px; */
+    padding: 9px 0 16px;
+    position: relative;
+}
+/* .multi-wizard.instance-wizard .section.apply-time-length input[type=text] {
+  float: left;
+  width: 28px;
+  margin: 6px -1px 0 8px;
+}
+.multi-wizard.instance-wizard .section.apply-time-length label.error {
+  position: absolute;
+  top: 29px;
+  left: 242px;
+  font-size: 10px;
+}
+.multi-wizard.instance-wizard .data-disk-offering .disk-select-group.custom-size .section.apply-time-length {
+  display: block !important;
+} */

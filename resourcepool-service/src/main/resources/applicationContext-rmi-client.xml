@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN"   "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans> 
+	<bean id="cmdbServiceProxy" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"> 
+	  <property name="serviceUrl"> 
+	    <value>rmi://16.159.216.132:48088/CmdbService</value>
+	  </property>
+	  <property name="serviceInterface">
+	    <value>com.hp.xo.uip.cmdb.service.CmdbService</value>
+	  </property>
+	  <property name="lookupStubOnStartup" value="false"/>   
+	  <property name="refreshStubOnConnectFailure" value="true"/>  
+	  <property name="cacheStub" value="false"/>
+	</bean>
+	<bean id="cmdbViewServiceProxy" class="org.springframework.remoting.rmi.RmiProxyFactoryBean"> 
+	  <property name="serviceUrl"> 
+	    <value>rmi://16.159.216.132:48088/CmdbViewService</value>
+	  </property>
+	  <property name="serviceInterface">
+	    <value>com.hp.xo.uip.cmdb.service.CmdbViewService</value>
+	  </property>
+	  <property name="lookupStubOnStartup" value="false"/>   
+	  <property name="refreshStubOnConnectFailure" value="true"/>  
+	  <property name="cacheStub" value="false"/>
+	</bean>
+	<!-- RMI NotifyService -->
+	<bean id="addNotifyService" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+		<property name="serviceUrl" value="rmi://16.189.135.21:48089/addNotify" />
+		<property name="serviceInterface" value="com.hp.avmon.notify.AddNotifyService" />
+	    <property name="lookupStubOnStartup" value="false"/>   
+	    <property name="refreshStubOnConnectFailure" value="true"/>  
+	    <property name="cacheStub" value="false"/>
+	</bean>
+</beans>

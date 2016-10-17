@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<datasource>  
+    <rmi>
+    	<host>
+    		<field-maping>
+    			<field  name="cscomputername" description="主机名">hostName</field>
+    			<field  name="type" description="型号">type</field>
+    			<field  name="oscaption_version" description="主机操作系统及版本">osCaption</field>
+    			<field  name="status" description="状态">status</field>    			
+    			<field  name="csnumberofprocessors" description="cpu个数">cpuNumber</field>
+    			<field  name="cstotalphysicalmemory" description="物理内存">physicsMemory</field>
+    			<field  name="ostotalvirtualmemorysize" description="系统虚拟内存大小">virtualMemory</field>
+    			<field  name="machine_net_ip" description="IP地址">ipAddr</field>
+    			<field  name="machine_net_addr" description="网络地址">netAddr</field>
+    			<field  name="machine_cpu_status" description="CPU状态">cpuStatus</field>
+    			<field  name="fdisk_total" description="磁盘大小">fDiskTotal</field> 
+    			<field  name="derived_from" description="类型">derivedFrom</field>
+    			<field  name="is_virtual" description="是否虚拟化">isVirtual</field>		
+    		</field-maping>
+    	</host>
+    	<virtual-host>
+    	<!-- instancename：内部名称(代号i-2-50-vm 唯一)   name：实例名称（唯一）  displayname：显示名称 -->
+    		<field-maping>
+    			<!-- ci固有属性 name=‘cloudstack属性’ -->
+    			<field  name="name" description="系统名称">name</field>
+    			<field  name="displayname" description="系统显示名称">displayname</field>  			
+    			<!-- ci自定义属性 -->
+    			<field  name="instancename" description="实例名称">instancename</field>  			 
+    			<field  name="hostname" description="主机名">hostname</field>   					
+    			<field  name="cpunumber" description="cpu个数">cpunumber</field>
+    			<field  name="memory" description="内存">memory</field>
+    			<field  name="hypervisor" description="虚拟化">hypervisor</field>    			
+    		<!-- 	<field  name="state" description="状态">state</field> -->
+    			<field  name="zonename" description="区域名称">zonename</field>
+    			<field  name="ipaddress" description="IP地址">ipaddress</field>
+    			<field  name="project" description="所属业务系统">project</field>          			   			
+    		</field-maping>
+    	</virtual-host> 
+    	<project>
+    		<field-maping>
+    			<!-- ci固有属性 name=‘cloudstack属性’ -->
+    			<field  name="name" description="系统名称">name</field>
+    			<field  name="displaytext" description="系统显示名称">displayname</field> 
+    			<!-- ci自定义属性 --> 
+    			<field  name="account" description="管理账户">account</field> 				   			
+    		</field-maping>
+    	</project> 
+    	<resourcepool>
+    		<field-maping>
+    			<!-- ci固有属性 name=‘cloudstack属性’ -->
+    			<field  name="name" description="系统名称">name</field>
+    			<field  name="displayname" description="系统显示名称">displayname</field>  			
+    			<!-- ci自定义属性 -->  			   			
+    		</field-maping>
+    	</resourcepool> 		
+    </rmi>
+</datasource>  

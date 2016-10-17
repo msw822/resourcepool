@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+	 <context:annotation-config/>
+	
+	 <!-- Activates scanning of @Repository -->
+    <context:component-scan base-package="com.hp.xo.resourcepool.dao"/>
+	<context:component-scan base-package="com.hp.xo.resourcepool.service"/>
+	<context:component-scan base-package="com.hp.xo.resourcepool.schedule.service"/>
+	
+
+
+	<!-- Transaction manager for a single Hibernate SessionFactory (alternative 
+		to JTA) -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- 使用annotation定义事务- -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+		destroy-method="destroy">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.hp.xo.resourcepool.model.Log</value>
+				<value>com.hp.xo.resourcepool.model.WorkOrder</value>
+				<value>com.hp.xo.resourcepool.model.WorkItem</value>
+				<value>com.hp.xo.resourcepool.model.DbConfig</value>
+				<value>com.hp.xo.resourcepool.model.ProvisionAttribute</value>
+				<value>com.hp.xo.resourcepool.model.PhysicsInstances</value> 
+				<value>com.hp.xo.resourcepool.model.WorkOrderJob</value> 
+			</list>
+		</property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.hp.xo.resourcepool.model</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.query.substitutions">true 'Y', false 'N'</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				<!-- 
+				<prop key="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</prop>
+				<prop key="hibernate.query.factory_class">org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory</prop>
+				 -->
+				<prop key="hibernate.show_sql">true</prop>
+				<!-- Hibernate Search index directory <prop key="hibernate.search.default.indexBase">${app.search.index.basedir}</prop> -->
+			</props>
+			<!-- Turn batching off for better error messages under PostgreSQL -->
+			<!-- hibernate.jdbc.batch_size=0 -->
+		</property>
+	</bean>
+	<!-- JSR303 Validator定义 -->
+	<context:property-placeholder ignore-unresolvable="true" location="classpath*:/config.properties" />
+	<!-- Tomcat JDBC连接池 -->
+	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.connection.driverclass}" />
+		<property name="url" value="${jdbc.connection.url}" />
+		<property name="username" value="${jdbc.connection.username}" />
+		<property name="password" value="${jdbc.connection.password}" />
+		<!-- Connection Pooling Info -->
+		<property name="maxActive" value="${jdbc.pool.maxActive}" />
+		<property name="maxIdle" value="${jdbc.pool.maxIdle}" />
+		<property name="minIdle" value="0" />
+		<property name="defaultAutoCommit" value="false" />
+	</bean>
+
+
+ 
+
+</beans>

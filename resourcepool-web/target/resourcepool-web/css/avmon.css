@@ -1,0 +1,55 @@
+  #avmontop { 
+  height: 70px; display: block;
+  #box-shadow: 0 4px #0087c0;
+   padding:10px 0px; background-color: #0096d6;-moz-box-sizing: border-box;box-sizing: border-box;color: #fff
+  
+  ;}
+.fixed { position: absolute; height: 70px; width: 100%; z-index: 1039;}
+#avmontop:after { content: ""; display: block; clear: both; }
+.avmon_LOGO {float:left; margin-left:10px; background-image:url(../images/logo_white.png);width:164px;height:50px;background-repeat:no-repeat; cursor:pointer;}
+.MainTitle{ padding:20px 0px 0px 10px;display:inline-block;}
+.Avmon_back {
+	background: url(../images/back.png) no-repeat center center;
+	width: 32px;
+	height: 32px;
+	float: left;
+	padding-top: 20px;
+	padding-left: 16px;
+	cursor: pointer;
+}
+.Avmon_back_gif{
+	width: 32px;
+	height: 32px;
+	float: left;
+	padding-top: 11px;
+	padding-left: 16px;
+	cursor: pointer;
+}
+.Avmon_backList { background: url(../images/backList.png) no-repeat center center; width:32px; height:32px; float:left; padding-top:26px; padding-left:20px;cursor:pointer;}
+
+.Profile{float:right; margin-top:7px; margin-right:50px; }	
+
+.ProfileName{
+float:left;
+padding-left:10px;
+line-height:40px;
+width:100px;}
+
+.ProfileIcon {
+float:left;
+background-image:url(../images/UserIcon_2_white.png);
+width:40px; 
+height:40px;}
+
+.ProfileArrow{
+content: "";
+border-style: solid;
+border-width: 8px 8px 0px 8px;
+border-color: #FFFFFF transparent transparent transparent;
+position: absolute;
+-webkit-transform: rotate(360deg);
+right:40px;
+top:24px;
+position: absolute;
+z-index:100
+;}

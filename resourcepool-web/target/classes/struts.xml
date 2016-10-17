@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="false"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.action.extension" value="action,"/>
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources,errors"/>
+    <constant name="struts.multipart.maxSize" value="2097152"/>
+    <constant name="struts.ui.theme" value="css_xhtml"/>
+    <constant name="struts.codebehind.pathPrefix" value="/WEB-INF/pages/"/>
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <constant name="struts.convention.action.disableScanning" value="true"/>
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
+    <!-- Allow <s:submit> to call method names directly -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+        
+ 	<package name="cmsz-default" extends="struts-default">
+	    <interceptors>
+				<interceptor name="authorization"  class="com.xo.resourcepool.web.interceptor.AuthorizationInterceptor"/>
+				<interceptor name="error"  class="com.xo.resourcepool.web.interceptor.ExceptionInterceptor"></interceptor>
+				<interceptor-stack name="cmszStack">
+					<interceptor-ref name="defaultStack" />
+					<interceptor-ref name="error" />
+					<interceptor-ref name="authorization" />
+				</interceptor-stack>
+	
+		</interceptors>       
+		<default-interceptor-ref name="cmszStack" />
+	</package>
+
+    <package name="control" extends="cmsz-default" namespace="/">
+    	<action name="api" class="com.hp.xo.resourcepool.web.action.ControlAction">
+    	    <result name="generic" type="chain">generic</result>
+    		<result name="login" type="chain">login</result>
+			<result name="logout" type="chain">logout</result>
+			<result name="listPhysicsHost" type="chain">listPhysicsHost</result>
+			<result name="listPhysicsByOrderId" type="chain">listPhysicsByOrderId</result>
+			<result name="customDestroyVirtualMachine" type="chain">customDestroyVirtualMachine</result>
+			<result name="physicsHostInfo" type="chain">physicsHostInfo</result>
+			<result name="listPhysicsHostCapacity" type="chain">listPhysicsHostCapacity</result>
+			<result name="listPhysicsHostStatus" type="chain">listPhysicsHostStatus</result>					
+			<result name="getTemplateAccount" type="chain">getTemplateAccount</result>    		    		
+			<result name="createTemplateAccount" type="chain">createTemplateAccount</result>
+			<result name="deleteTemplateAccount" type="chain">deleteTemplateAccount</result>
+			<result name="listLog" type="chain">listLog</result>
+			<result name="listProperty" type="chain">listProperty</result>
+			<result name="addProperty" type="chain">addProperty</result>
+			<result name="deleteProperty" type="chain">deleteProperty</result>
+			<result name="listresourcepool" type="chain">listresourcepool</result>
+			<result name="listsubresource" type="chain">listsubresource</result>
+			<result name="listavailableresource" type="chain">listavailableresource</result>
+			<result name="configzone" type="chain">configzone</result>
+			<result name="computeresource" type="chain">computeresource</result>
+			<result name="removerelation" type="chain">removerelation</result>
+			<result name="listResourcePoolRelatedObjectType" type="chain">listResourcePoolRelatedObjectType</result>
+			<result name="listResourcePoolPermission" type="chain">listResourcePoolPermission</result>
+			<result name="saveResourcePoolPermission" type="chain">saveResourcePoolPermission</result>
+			<result name="saveOrder" type="chain">saveOrder</result>
+			<result name="savePhysicsHostAssignment" type="chain" >savePhysicsHostAssignment</result>
+			<result name="saveEnabledPhysicsInstanceByOrderid" type="chain" >saveEnabledPhysicsInstanceByOrderid</result>
+			<result name="listWorkOrder" type="chain">listWorkOrder</result>
+			<result name="listConfig" type="chain">listConfig</result>
+			<result name="listDimResourceTree" type="chain">listDimResourceTree</result>
+			<result name="getAttribute" type="chain">getAttribute</result>
+			<result name="getExtval" type="chain">getExtval</result>
+			<result name="doapprove" type="chain">doapprove</result>
+			<result name="getWorkOrderReport" type="chain">getWorkOrderReport</result>
+			<result name="workOrderReportExcel" type="chain">workOrderReportExcel</result>
+			<result name="checkStatus" type="chain">checkStatus</result>
+			<result name="listProjectResourcePoolPermission" type="chain">listProjectResourcePoolPermission</result>
+			<result name="getRelResourcePoolByZoneId" type="chain">getRelResourcePoolByZoneId</result>
+			<result name="listTopData" type="chain">listTopData</result>
+			<result name="firstPage" type="chain">firstPage</result>
+			<result name="rootClusterResource" type="chain">rootClusterResource</result>
+			<result name="listPoolNodes" type="chain">listPoolNodes</result>
+			<result name="firstResource" type="chain">firstResource</result>
+			<result name="getResource" type="chain">getResource</result>
+			<result name="secondResource" type="chain">secondResource</result>
+			<result name="listhost" type="chain">listhost</result>
+			<result name="listEquipmentEnroll" type="chain">listEquipmentEnroll</result>
+			<result name="createEquipmentEnroll" type="chain">createEquipmentEnroll</result>
+			<result name="updateEquipmentEnroll" type="chain">updateEquipmentEnroll</result>
+			<result name="removeEquipmentEnroll" type="chain">removeEquipmentEnroll</result>
+			<result name="listmessage" type="chain">listmessage</result>
+			<result name="listvm" type="chain">listvm</result>
+			<result name="getvminfo" type="chain">getvminfo</result>
+			<result name="updatehostrespool" type="chain">updatehostrespool</result>
+			<result name="listrack" type="chain">listrack</result>
+			<result name="saveoarack" type="chain">saveoarack</result>
+			<result name="archivehost" type="chain">archivehost</result>
+			<result name="deletemessage" type="chain">deletemessage</result>
+			<result name="archiverack" type="chain">archiverack</result>
+			<result name="listdevinfo" type="chain">listdevinfo</result>
+			<result name="removehost" type="chain">removehost</result>
+			<result name="removerack" type="chain">removerack</result>
+			<result name="cancelOrder" type="chain">cancelOrder</result>
+			<result name="recycleOrder" type="chain">recycleOrder</result>				
+			<result name="getWorkOrderReport" type="chain">getWorkOrderReport</result>
+			<result name="workOrderReportExcel" type="chain">workOrderReportExcel</result>
+			<!-- 按按人员(账号)统计开始 -->
+			<result name="accountresource" type="chain">accountresource</result>
+			
+			<!-- 按按人员(账号)统计结束 -->
+			
+			<!-- 按业务系统统计开始 -->
+			<result name="operationresource" type="chain">operationresource</result>
+			
+			<!-- 按业务系统统计结束 -->
+			<result name="GlobalSetting_listUserDefined" type="chain">GlobalSetting_listUserDefined</result>
+			<result name="GlobalSetting_updateUserDefined" type="chain">GlobalSetting_updateUserDefined</result>
+			<result name="listEnabledBaremetalHosts" type="chain">listEnabledBaremetalHosts</result>
+			<result name="migrateVirtualMachineCmdb" type="chain">migrateVirtualMachineCmdb</result>
+			<result name="updateProjectVirtualMachineCmdb" type="chain">updateProjectVirtualMachineCmdb</result>
+    	</action>
+    	
+    	<action name="generic" 	class="com.hp.xo.resourcepool.web.action.GenericAction"/>
+    	<action name="login" 	class="com.hp.xo.resourcepool.web.action.LoginAction"/>
+    	<action name="logout" 	class="com.hp.xo.resourcepool.web.action.LogoutAction"/>
+    	<action name="listConfig" class = "com.hp.xo.resourcepool.web.action.DbConfigAction" method = "listConfig"/>
+    	<action name="listWorkOrder" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "list"/>
+    	<action name="getAttribute" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "getAttribute"/>
+    	<action name="checkStatus" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "checkStatus"/>
+    	<action name="getExtval" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "getExtval"/>
+		<action name="saveOrder" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "save"/>
+		<action name="savePhysicsHostAssignment" class="com.hp.xo.resourcepool.web.action.WorkOrderAction" method="savePhysicsHostAssignment" />
+		<action name="saveEnabledPhysicsInstanceByOrderid" class="com.hp.xo.resourcepool.web.action.WorkOrderAction" method="saveEnabledPhysicsInstanceByOrderid"></action>
+		<action name="doapprove" class = "com.hp.xo.resourcepool.web.action.WorkOrderApprovalAction" method = "approveWorkOrder"/>
+		<action name="listPhysicsHost" class ="com.hp.xo.resourcepool.web.action.PhysicsHostAction" method="listPhysicsHost"/>
+		<action name="physicsHostInfo" class ="com.hp.xo.resourcepool.web.action.PhysicsHostAction" method="physicsHostInfo"/>
+		<action name="listPhysicsHostCapacity" class ="com.hp.xo.resourcepool.web.action.PhysicsHostAction" method="listPhysicsHostCapacity"/>
+		<action name="listPhysicsHostStatus" class ="com.hp.xo.resourcepool.web.action.PhysicsHostAction" method="listPhysicsHostStatus"/> 
+		<action name="listPhysicsByOrderId" class ="com.hp.xo.resourcepool.web.action.PhysicsHostAction" method="listPhysicsByOrderId"/>
+		<action name="customDestroyVirtualMachine" class ="com.hp.xo.resourcepool.web.action.VirtualMachineAction" method="destroyVirtualMachine"/>
+		<action name="cancelOrder" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "cancel"/>
+		<action name="recycleOrder" class = "com.hp.xo.resourcepool.web.action.WorkOrderAction" method = "recycle"/>
+		 <action name="getWorkOrderReport" class = "com.hp.xo.resourcepool.web.action.WorkOrderReportAction" method = "getWorkOrderReport"/>
+		<action name="workOrderReportExcel" class = "com.hp.xo.resourcepool.web.action.WorkOrderReportAction" method = "workOrderReportExcel"/>
+  		<action name="computeresource" class = "com.hp.xo.resourcepool.web.action.ResourcePoolAction" method = "computeResource"/>
+  		<action name="listLog" class = "com.hp.xo.resourcepool.web.action.LogAction" method = "list"/>
+  		<!-- 按按人员(账号)统计开始 -->
+  		<action name="accountresource" class = "com.hp.xo.resourcepool.web.action.ResourcePoolAction" method = "accountresource"/>
+  		
+  		<!-- 按按人员(账号)统计结束 -->
+  		
+  		<!--按业务系统统计开始 -->
+  		<action name="operationresource" class = "com.hp.xo.resourcepool.web.action.ResourcePoolAction" method = "operationresource"/>
+  		
+  		<!-- 按业务系统统计结束 -->
+  		<action name="GlobalSetting_*" class="com.hp.xo.resourcepool.web.action.GlobalSettingAction" method="{1}"></action>
+  		
+  		<action name="listEnabledBaremetalHosts" class = "com.hp.xo.resourcepool.web.action.BaremetalHostAction" method = "list"/>
+  		<action name="listTopData" class = "com.hp.xo.resourcepool.web.action.TopDataAction" method = "listTopData"/>
+  		<action name="migrateVirtualMachineCmdb" class = "com.hp.xo.resourcepool.web.action.VirtualMachineAction" method = "migrateVirtualMachineCmdb"/>
+  		<action name="updateProjectVirtualMachineCmdb" class = "com.hp.xo.resourcepool.web.action.VirtualMachineAction" method = "updateProjectVirtualMachineCmdb"/>  		
+  		<!-- resource pool -->
+  		<action name="firstPage" class="com.cmsz.cloudplatform.web.action.ResourcePoolAction" method="firstPage">
+				<result name="success">/jsp/iaaspool/firstResource.jsp</result>
+		</action>
+		<action name="firstResource" class="com.cmsz.cloudplatform.web.action.ResourcePoolAction" method="firstResource">
+			<result name="success">/jsp/iaaspool/secondResource.jsp</result>
+		</action>
+		<action name="secondResource" class="com.cmsz.cloudplatform.web.action.ResourcePoolAction" method="secondResource">
+			<result name="success">/jsp/iaaspool/thirdResource.jsp</result>
+		</action>
+ 
+		
+    </package>
+
+</struts>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+						http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
+	
+ 
+	<context:component-scan base-package="com.hp.xo.resourcepool.schedule"/>
+    
+   <!--  <task:annotation-driven/> -->
+   <task:scheduled-tasks> 
+		<!-- 0 0 24 * * ?
+			30 10 1 * * ? 每天1点10分30秒触发任务
+     		30 10 * * * ? 每小时的10分30秒触发任务 
+     		15,30,45 * * * * ? 每15秒，30秒，45秒时触发任务
+			15-45 * * * * ? 15到45秒内，每秒都触发任务
+			15/5 * * * * ? 每分钟的每15秒开始触发，每隔5秒触发一次
+			15-30/5 * * * * ? 每分钟的15秒到30秒之间开始触发，每隔5秒触发一次
+			0 0/3 * * * ? 每小时的第0分0秒开始，每三分钟触发一次
+     	-->
+     
+    	<!-- <task:scheduled ref="resourceSchedule" method="work" cron="0 0/3 * * * ?"/> -->
+		<task:scheduled ref="saSchedule" method="work" cron="0 0/1 * * * ?"/>
+		<task:scheduled ref="saSchedule" method="expire" cron="0 0 0 * * ?"/>
+		<!--task:scheduled ref="virtualMachineSchedule" method="destroyVirtualMachine" cron="0 0/3 * * * ?"/>-->
+		<!--task:scheduled ref="physicalResourceSynSchedule" method="syn" cron="0 0/3 * * * ?"/>
+		<task:scheduled ref="logClearSchedule" method="syn" cron="30 0 5 1 1 ?"/>
+		<task:scheduled ref="doPaasBizSchedule" method="work" cron="30 10 * * * ?"/> -->
+		
+   </task:scheduled-tasks>
+</beans> 
